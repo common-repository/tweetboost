@@ -1,0 +1,3 @@
+[submodule "assets/plugins/acf"]
+	path = assets/plugins/acf
+	url = git@github.com:AdvancedCustomFields/acf.git

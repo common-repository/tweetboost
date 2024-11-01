@@ -1,0 +1,384 @@
+#wpcontent,#wpwrap {
+    background-color:#fff !important;
+}
+
+#wpbody-content {
+    width:97%;
+}
+
+.form-table {
+    width:89%;
+}
+
+#wpcontent .nav-tab {
+    line-height: 18px;
+    margin-bottom:0px;
+    background: #f1f1f1;
+}
+
+#wpcontent .nav-tab-wrapper li {
+    list-style: none;
+    font-size:15px;
+}
+
+#wpcontent .nav-tab-wrapper li:hover {
+    background: #a3f0ff !important;
+    color:#fff;
+    cursor:pointer;
+}
+
+.tab-container td {
+    vertical-align:top;
+}
+
+
+.tab-container input[type="text"]{
+    width:100%;
+    vertical-align:top;
+}
+
+.tab-container .table-radio{
+    min-width:400px;
+}
+
+
+.tb-tab-active, .tb-tab-active:focus, .tb-tab-active:focus:active, .tb-tab-active:hover {
+    border-bottom: 1px solid #f1f1f1 !important;
+    background: #a3f0ff !important;
+    color: #fff !important;
+}
+
+
+.tab-container .form-table th {
+    min-width: 273px;
+}
+
+.description {
+    margin-top:20px !important;
+    margin-left:5px !important;
+    padding-top:12px;
+    padding-bottom:20px;
+}
+
+/* start all tabs out hidden */
+.tab-container {
+    display:none;
+}
+
+/* style the "Add Twitter Avatar" section */
+#twitter-avatar-uploader .twitter-avatar-container{
+    max-width: 45px;
+    display: inline-block;
+}
+
+#twitter-avatar-uploader .twitter-avatar-controls{
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+
+#twitter-avatar-uploader .twitter-avatar-controls .remove-avatar-image{
+    margin: 0 0 0 8px;
+}
+
+/************************************************************************* Welcome Page */
+
+/************************* Save feature */
+.tab-footer{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top:10px;
+    text-align:right;
+    display:none; /* begin hidden */
+}
+
+/************************* center welcome */
+.centeredPrompt {
+    /**
+     * Lay out the children of this container with
+     * flexbox.
+     */
+    display: flex;
+
+    /**
+     * Rotate the main axis so that the children
+     * are laid out vertically, the same as in the
+     * above "Side bar" example.
+     */
+    flex-direction: column;
+
+    /**
+     * Instead of pushing the children apart, as in
+     * previous examples, we will group them together
+     * in the center of their container.
+     */
+    justify-content: center;
+
+    /**
+     * Align the children in the center, along
+     * the main axis. Because the direction is
+     * "column" this has a similar effect as setting
+     * text-align: center.
+     */
+    align-items: center;
+
+    min-height: 300px;
+    padding: 10px;
+}
+
+.centeredPrompt__item + .centeredPrompt__item {
+    margin-top: 5px;
+}
+
+.centeredPromptIcon {
+    font-size: 60px;
+    line-height: 0;
+}
+
+.centeredPromptLabel {
+    color: #86969C;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.centeredPromptDetails {
+    color: #86969C;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon {
+    color: #BCD2DA;
+}
+
+/************************* Feature List */
+.featureListItem {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    padding: 6px;
+}
+
+.featureListItem + .featureListItem {
+    border-top: 1px solid #D7DBDD;
+}
+
+.featureListItem--reverse {
+    /**
+     * We can specify the flex-direction so that
+     * the children elements are displayed in the
+     * reverse order of how they appear in the
+     * markup.
+     */
+    flex-direction: row-reverse;
+}
+
+.featureListItem__icon,
+.featureListItem__description {
+    padding: 5px 15px;
+}
+
+.featureListItem__icon {
+    font-size: 50px;
+    line-height: 0;
+}
+
+.featureListItem__description {
+    color: #57727C;
+    font-size: 12px;
+}
+
+/************************* card group */
+.cardGroup {
+    /**
+     * Lay out the children of this container with
+     * flexbox, which is horizontal by default.
+     */
+    display: flex;
+
+    border: 1px solid #CAD0D2;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.cardGroup__card {
+    flex: 1 1 0%;
+    border: none;
+    border-radius: 0;
+}
+
+.cardGroup__card + .cardGroup__card {
+    border-left: 1px solid #D7DBDD;
+}
+
+.cardGroup__cardDescription {
+    /**
+     * We're doing almost the exact same thing here as
+     * we did above. The difference is that its
+     * flex-basis is auto, so now the size of its content
+     * will affect how large it is.
+     */
+    flex: 1 1 auto;
+}
+
+/********************************** testimony */
+
+.post {
+    /**
+     * Lay out the children of this container with
+     * flexbox, which is horizontal by default.
+     */
+    display: flex;
+}
+
+.postUser {
+    /**
+     * The flex property is a short-hand for setting
+     * the flex-grow, flex-shrink, and flex-basis
+     * properties. These properties control how the
+     * element resizes to fill its container.
+     *
+     * The value we're using here is actually the
+     * default, but I'm including so I can explain it
+     * a bit. The default value equates to:
+     *
+     * - flex-grow: 0
+     * - flex-shrink: 1
+     * - flex-basis: auto
+     *
+     * We set flex-grow to 0, so this element won't
+     * expand to fill its container.
+     *
+     * We'll then set flex-shrink to 1 so that the
+     * element will shrink as its container gets
+     * smaller. However, it will only shrink so far
+     * because...
+     *
+     * ...we set flex-basis to auto. This causes
+     * the content's size to also be a factor in the
+     * calculation of the element's size. Because
+     * the width of a child element is set (below),
+     * this element won't shrink below that size.
+     *
+     * The net result is that this element stays a
+     * fixed size, neither expanding nor shrinking.
+     */
+    flex: 0 1 auto;
+
+    padding-bottom: 10px;
+}
+
+.postUser__portrait {
+    /**
+     * We're using these three flexbox properties
+     * here to center the portrait icon inside of
+     * this element.
+     *
+     * We'll explore these properties in more detail
+     * in the "Stay Centered" section, so I'll only
+     * briefly summarize here:
+     *
+     * - display: flex instructs the browser to
+     *   use flexbox to lay out this element's
+     *   children.
+     * - justify-content: center will center the
+     *   icon along the main axis.
+     * - align-items: center will center the icon
+     *   along the secondary (perpendicular) axis.
+     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 90px;
+    font-size: 70px;
+    line-height: 0;
+}
+
+.postUser__name {
+    color: #57727C;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+.postBody {
+    /**
+     * We'll use the short-hand flex property again
+     * here, to make the body of the post expand to
+     * fill the container, and shrink as the container
+     * becomes narrower.
+     *
+     * By setting flex-grow to 1, we cause this
+     * element to expand to fill the container.
+     *
+     * Setting flex-shrink to 1 causes this element
+     * to shrink with the container.
+     *
+     * Last, we set flex-basis to 0 so that its
+     * size is solely determined by the size of
+     * the container. (The default value is auto,
+     * which would cause the content's size to also
+     * be a factor in this calculation.)
+     *
+     * The net result of these properties is that the
+     * element is a fluid size, and will expand and
+     * shrink with its container.
+     *
+     * NOTE: IE11 ignores flex short-hand declarations
+     * with unitless flex-basis values. So we have to
+     * use 0% instead of 0 as a workaround. You can
+     * find more info at:
+     * github.com/philipwalton/flexbugs.
+     */
+    flex: 1 1 0%;
+
+    position: relative;
+    padding: 15px;
+    border: 1px solid #CAD0D2;
+    border-radius: 4px;
+}
+
+.postBody:after,
+.postBody:before {
+    right: 100%;
+    top: 35px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.postBody:after {
+    border-color: transparent;
+    border-right-color: #ffffff;
+    border-width: 8px;
+    margin-top: -8px;
+}
+
+.postBody:before {
+    border-color: transparent;
+    border-right-color: #CAD0D2;
+    border-width: 9px;
+    margin-top: -9px;
+}
+
+.postBody__content {
+    color: #57727C;
+    font-size: 12px;
+}
+
+.postBody__date {
+    margin-top: 5px;
+    color: #86969C;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

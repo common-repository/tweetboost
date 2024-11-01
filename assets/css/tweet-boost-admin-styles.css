@@ -1,0 +1,114 @@
+/* hide the error data fields */
+.tweet-boost-hidden-data-field{
+    display: none;
+}
+
+/* disabled Tweet Status reset button styles */
+.acf-field-59d2b549ed77d .button.button-primary.button-large.tweet-boost-reset-status-button-disabled{
+    background-color: #b1b1b1 !important;
+    color: #e2e2e2 !important;
+    border-color: #e2e2e2 !important;
+}
+
+/* center the "Add Post Link" button */
+.add-post-link-button-container{
+    text-align: center;
+}
+
+/* disabled "Add Post Link" button styles */
+.acf-field-598906cf9db23 .button.button-primary.button-large.tweet-boost-add-link-button-disabled{
+    background-color: #b1b1b1 !important;
+    color: #e2e2e2 !important;
+    border-color: #e2e2e2 !important;
+}
+
+/* hide the tippy tooltip if there's a link or post link token in the tweet content,
+ * or if there's no tweet content */
+.has-tweet-link .tippy-popper,
+.hide-link-tooltip .tippy-popper{
+    display: none !important;
+}
+
+/* add the "No Link In Tweet" styles */
+.acf-field-textarea.doesnt-have-tweet-link{
+    background: #c4ffec;
+}
+
+/* setup the default box sizing */
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/** styles for the tweet schedule table **/
+/* add padding to the top and bottom of the tweet schedule */
+.acf-field.acf-field-repeater.acf-field-598906279db21 .acf-repeater.-table table.acf-table{
+    padding-bottom: 32px;
+    border: none;
+    border-top: 32px solid #ffffff;
+}
+
+/* add a border to the header elements */
+.acf-field.acf-field-repeater.acf-field-598906279db21 .acf-repeater.-table table.acf-table th.acf-row-handle,
+.acf-field.acf-field-repeater.acf-field-598906279db21 .acf-repeater.-table table.acf-table th.acf-th{
+    border-top: solid 2px #ededed;
+}
+
+/* center the text in the status message field */
+#acf-group_5989061655cc1 .acf-field-599743247e1b1 .acf-input p{
+    text-align: center;
+}
+
+/* create the basic styling for the status tooltips */
+#acf-group_5989061655cc1 .acf-field-599743247e1b1 .tweet-schedule-status-tooltip{
+    width: 100%;
+    font-size: 50px;
+    margin: 0px;
+}
+
+/* tooltip icon styles */
+.acf-field-599743247e1b1 .tweet-schedule-status-tooltip.notice-status-tooltip{
+    color: #ffb800;
+}
+.acf-field-599743247e1b1 .tweet-schedule-status-tooltip.tweet-scheduled-status-tooltip{
+    color: #2fdc2d;
+}
+.acf-field-599743247e1b1 .tweet-schedule-status-tooltip.success-status-tooltip{
+    color: #00b8ff;
+}
+.acf-field-599743247e1b1 .tweet-schedule-status-tooltip.error-status-tooltip{
+    color: #b0bf75;
+}
+.acf-field-599743247e1b1 .tweet-schedule-status-tooltip.pause-status-tooltip{
+    color: #ddea14;
+}
+.acf-field-599743247e1b1 .tweet-schedule-status-tooltip.expired-status-tooltip{
+    color: #d69a6f;
+}
+
+/* set the schedule notification text color to white since the background is dark */
+.acf-field.acf-field-repeater.acf-field-598906279db21.schedule-error .acf-label > .description{
+    color: #ffffff;
+}
+
+/* set schedule notification text details */
+.acf-field.acf-field-repeater.acf-field-598906279db21 .acf-label > .description{
+    font-size: 24px;
+    text-align: center;
+    line-height: 1;
+}
+
+/* set the reset tweet status button's text to wrap */
+.acf-field.acf-field-button.acf-field-59d2b549ed77d .acf-input .button{
+    white-space: normal;
+}
+
+/* set a background for tweets with errors */
+#acf-group_5989061655cc1 .acf-field.tweet-has-error,
+#acf-group_5989061655cc1 .acf-field.tweet-has-error .acf-label p{
+    background: #A30003;
+    color: #ffffff;
+}
